@@ -8,27 +8,27 @@ class Form extends React.Component {
           Nome da carta:
           <input type="text" data-testid="name-input" />
         </label>
-        <label htmlFor='textarea'>
+        <label htmlFor="textarea">
           Descrição da carta:
           <input type="textarea" data-testid="description-input" />
         </label>
-        <label htmlFor='number'>
+        <label htmlFor="number">
           Atributo 1:
           <input type="number" data-testid="attr1-input" />
         </label>
-        <label htmlFor='number'>
+        <label htmlFor="number">
           Atributo 2:
           <input type="number" data-testid="attr2-input" />
         </label>
-        <label htmlFor='number'>
+        <label htmlFor="number">
           Atributo 3:
           <input type="number" data-testid="attr3-input" />
         </label>
-        <label htmlFor='text'>
+        <label htmlFor="text">
           Caminho da imagem da carta:
           <input type="text" data-testid="image-input" />
         </label>
-        <label htmlFor='select'>
+        <label htmlFor="select">
           Raridade da carta:
           <select type="select" data-testid="rare-input">
             <option>normal</option>
@@ -36,7 +36,7 @@ class Form extends React.Component {
             <option>muito raro</option>
           </select>
         </label>
-        <label htmlFor='checkbox'>
+        <label htmlFor="checkbox">
           Esta carta é super trunfo?
           <input type="checkbox" data-testid="trunfo-input" />
         </label>
