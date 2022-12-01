@@ -24,60 +24,73 @@ class Form extends Component {
           Nome da carta:
           <input
             type="text"
+            name="cardName"
             data-testid="name-input"
             value={ cardName }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <label htmlFor="textarea">
           Descrição da carta:
           <input
             type="textarea"
+            name="cardDescription"
             data-testid="description-input"
             value={ cardDescription }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <label htmlFor="number">
           Atributo 1:
           <input
             type="number"
+            name="cardAttr1"
             data-testid="attr1-input"
             value={ cardAttr1 }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <label htmlFor="number">
           Atributo 2:
           <input
             type="number"
+            name="cardAttr2"
             data-testid="attr2-input"
             value={ cardAttr2 }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <label htmlFor="number">
           Atributo 3:
           <input
             type="number"
+            name="cardAttr3"
             data-testid="attr3-input"
             value={ cardAttr3 }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <label htmlFor="text">
           Caminho da imagem da carta:
           <input
             type="text"
+            name="cardImage"
             data-testid="image-input"
             value={ cardImage }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <label htmlFor="select">
           Raridade da carta:
           <select
             type="select"
+            name="cardRare"
             data-testid="rare-input"
             value={ cardRare }
             onChange={ onInputChange }
@@ -87,15 +100,18 @@ class Form extends Component {
             <option>muito raro</option>
           </select>
         </label>
+        <br />
         <label htmlFor="checkbox">
           Esta carta é super trunfo?
           <input
             type="checkbox"
+            name="cardTrunfo"
             data-testid="trunfo-input"
             checked={ cardTrunfo }
             onChange={ onInputChange }
           />
         </label>
+        <br />
         <button
           type="button"
           data-testid="save-button"
