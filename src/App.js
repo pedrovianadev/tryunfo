@@ -88,6 +88,7 @@ class App extends React.Component {
       cardAttr1,
       cardAttr2,
       cardAttr3,
+      hasTrunfo: false,
     };
 
     this.setState(({ cards }) => ({
@@ -103,6 +104,11 @@ class App extends React.Component {
       hasTrunfo: false,
       isSaveButtonDisabled: true,
     }));
+    if (cardTrunfo) {
+      this.setState(() => ({
+        hasTrunfo: true,
+      }));
+    }
   };
 
   render() {
