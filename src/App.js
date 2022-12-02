@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.onInputChange = this.onInputChange.bind(this);
-    const INITIAL_STATE = {
+    this.state = {
       cardName: '',
       cardDescription: '',
       cardAttr1: 0,
@@ -17,10 +17,6 @@ class App extends React.Component {
       cardTrunfo: false,
       hasTrunfo: false,
       isSaveButtonDisabled: true,
-    };
-
-    this.state = {
-      ...INITIAL_STATE,
     };
   }
 
